@@ -10,46 +10,48 @@ const LandingPage = React.createClass({
   },
   render(){
     return (
-      <div className="navbarParent">
+      <div className="navbar">
         {/*nav bar */}
+      <div className="navbarParent">
         <div className="navbarOne">
-          <div className="logo">
             <img src="/logo.png"/>
-          </div>
-          <div className="navbarLogin">
-            <form className="userLogin">
-              <input type="text" onChange={this.change.bind(this,"email")} value={this.state.email}/>
-              <input type="text" onChange={this.change.bind(this,"password")} value={this.state.password}/>
-              <button id="login-button"><img src="/login-button.png" /></button>
-            </form>
+        </div>
+          <div className="navbarTwo">
+            <div className="navbarSignUp">
+              {/* <h4 className="login">Username:</h4>*/}
+              {/* <h4 className="login">Password:</h4>*/}
+              <input className="inputBox" type="text" placeholder="Username" onChange={this.change.bind(this,"email")} value={this.state.email}/>
+              <input className="inputBox" type="text" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
+            <button className="loginButton">
+                <img className="loginButton" src="/login-button.png" />
+            </button>
+            </div>
           </div>
         </div>
         {/*nav bar ends*/}
         {/*Body*/}
         <div className="buttonLanding">
           <div className="landingPageButtons">
-            <img src="/frontPagePic.jpg" />
+            <img src="/l.jpg" />
             <button className="landingPageButton1">
-              give a box
+              <h2 className="landingButtonTitle"> Give A Box </h2>
             </button>
             <button className="landingPageButton2">
-              get a box
+              <h2 className="landingButtonTitle"> Get A Box </h2>
             </button>
           </div>
         </div>
         {/*end of body*/}
         {/*nutrition*/}
-        <div>
-          <div>
-            <p>LEARN MORE ABOUT HOW TO BETTER YOUR NUTRITION</p>
-            <div>
-              <input type="number" placeholder="enter your zip code" value={this.state.zip} onChange={this.change.bind(this,"zip")}/>
-              <button>
-              search
+          <div className="landingPageFooter">
+            <div className="pageFooter">
+            <h1 className="learnNutrition">LEARN MORE ABOUT HOW TO BETTER YOUR NUTRITION</h1>
+              <input className="nutritionZip" type="number" placeholder="   Enter Your Zip Code" value={this.state.zip} onChange={this.change.bind(this,"zip")}/>
+              <button className="nutritionButton">
+                <img className="nutritionButton" src="/login-button.png" />
               </button>
             </div>
           </div>
-        </div>
         {/*end of nutrition*/}
       </div>
     )

@@ -1,33 +1,74 @@
 body, html {
   margin: 0;
   padding: 0;
-  /*font-family: 'Lato', sans-serif;*/
 }
 
 /*-------NAVBAR---------*/
+.navbarParent{
+  display:flex;
+  justify-content: space-between;
+
+}
 .navbarOne{
-  display: flex;
   background-color: white;
-  justify-content:space-between;
+}
+
+.navbarSignUp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbarTwo{
+  display:flex;
+  margin-right: 35px;
+  background-color: white;
+}
+
+h4.login{
+  margin: 0 0 0 0;
+}
+
+.inputBox{
+  border-radius: 9px;
+  width: 150px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
 }
 
 .navbarOne img{
-  height: 75px;
+  height: 50px;
   width: 125px;
   margin: 0px, 0px, 0px, 0px;
   padding-left: 15px;
-
 }
 
-.navbarLogin{
-  background-color: blue;
-  width: 450px;
-  align-items: stretch;
+button.loginButton{
+  background: transparent;
+  border-width: 0px;
 }
 
-#login-button img{
-  height: 15px;
-  width: 15px;
+.loginButton img{
+  align-items: center;
+  background: transparent;
+  padding: 0px 0px 0px 0px; ;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-width: 0px;
+}
+
+.landingPageButtons{
+  display: flex;
+  align-items: center;
+  background-color: purple;
+}
+
+h2.landingButtonTitle {
+  font-family: Avantgarde, sans-serif;
+  color: white;
+  font-size: 2em;
 }
 
 .landingPageButton1{
@@ -40,7 +81,8 @@ body, html {
   border-style: none;
   position: absolute;
   top: 278px;
-  left: 640px;
+  left: 700px;
+  opacity: 0.6;
 }
 
 .landingPageButton2{
@@ -53,13 +95,59 @@ body, html {
   border-style: none;
   position: absolute;
   top: 275px;
-  left: 240px;
+  left: 325px;
+  opacity: 0.6;
 }
 
 .landingPageButtons img{
+  max-height:625px;
   width: 100%;
-  height: 600px;
-  position: relative;
-  top: 0;
-  left: 0;
+}
+
+.landingPageFooter{
+  display: flex;
+  background-color: #8573D6;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 610px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pageFooter{
+  display:flex;
+  flex-direction: row;
+}
+
+h1.learnNutrition {
+  font-size: 1em;
+  margin-right: 15px;
+  color: white;
+  font-family: Avantgarde, sans-serif
+}
+
+.nutritionZip{
+  border-radius: 15px;
+  padding: 0;
+  width: 200px;
+  height: 25px;
+  border-style: none;
+  margin-top: 7px;
+}
+
+button.nutritionButton{
+  display:flex;
+  background: transparent;
+  border-width: 0px;
+}
+
+.nutritionButton img{
+  align-items: center;
+  background: transparent;
+  padding: 0px 0px 0px 0px; ;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-width: 0px;
 }
