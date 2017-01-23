@@ -36,7 +36,7 @@ h4.login{
   border: 1px solid #A9A9A9;
   width: 150px;
   height: 25px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 10px;
   background-color: white;
 }
@@ -57,7 +57,7 @@ button.loginButton{
 .loginButton img{
   align-items: center;
   background: transparent;
-  padding: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
   border: none;
   width: 20px;
   height: 20px;
@@ -92,6 +92,14 @@ h2.landingButtonTitle {
   opacity: 0.6;
 }
 
+.landingPageButton1:hover, .landingPageButton2:hover{
+  background-color: #8227A4;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
 .landingPageButton2{
   width: 185px;
 	height: 185px;
@@ -112,7 +120,7 @@ h2.landingButtonTitle {
   left: 145px;
   color: white;
   font-size: 17px;
-  font-family: Georgia, serif;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   line-height: 60px;
   text-shadow: 0 4px 3px black, 0 -3px 1px rgba(0,0,0,.1), 0 8px 8px rgba(0,0,0,.1);
 }
@@ -137,57 +145,7 @@ font-size: 1.7em;
   height: auto;
   width: 100%;
   margin: 0 0 0 0;
-
 }
-
-.landingPageFooter{
-  display: flex;
-  background-color: #8573D6;
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  top: 610px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.pageFooter{
-  display:flex;
-  flex-direction: row;
-}
-
-h1.learnNutrition {
-  font-size: 1em;
-  margin-right: 15px;
-  color: white;
-  font-family: Avantgarde, sans-serif;
-}
-
-.nutritionZip{
-  border-radius: 15px;
-  padding: 0;
-  width: 200px;
-  height: 25px;
-  border-style: none;
-  margin-top: 7px;
-}
-
-button.nutritionButton{
-  display:flex;
-  background: transparent;
-  border-width: 0px;
-}
-
-.nutritionButton img{
-  align-items: center;
-  background: transparent;
-  padding: 0px 0px 0px 0px; ;
-  border: none;
-  width: 20px;
-  height: 20px;
-  border-width: 0px;
-}
-
 /*---------REGISTRATION PAGE -------------*/
 
 .navbarBorder{

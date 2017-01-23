@@ -34,7 +34,7 @@ const LandingPage = React.createClass({
                 {/* <h4 className="login">Username:</h4>*/}
                 {/* <h4 className="login">Password:</h4>*/}
                 <input className="inputBox" type="text" placeholder="Username" onChange={this.change.bind(this,"email")} value={this.state.email}/>
-                <input className="inputBox" type="text" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
+                <input className="inputBox" type="password" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
                 <button className="loginButton">
                   <img className="loginButton" src="/login-button.png" />
                 </button>
@@ -47,9 +47,9 @@ const LandingPage = React.createClass({
         <div className="buttonLanding">
           <div className="landingPageButtons">
             <img src="/l.jpg" />
-          <div className="landTitleText">
-            <h1>6.3 Million Households Experience Very Low Food Security. <br/> For Those Who Just Need A little Extra Chow!</h1>
-          </div>
+            <div className="landTitleText">
+              <h1>6.3 Million Households Experience Very Low Food Security. <br/> We're Here For Those Who Just Need A Little Extra Chow!</h1>
+            </div>
             <button className="landingPageButton1" onClick={this.donorRegistration}></button>
             <button className="landingPageButton2" onClick={this.recipientRegistration}></button>
             <div className="landingButtonTitle">

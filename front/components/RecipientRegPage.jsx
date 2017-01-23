@@ -39,7 +39,7 @@ const RecipientRegPage = React.createClass({
                 <input className="regA" type="text" placeholder="First Name:" onChange={this.onChange.bind(this, "first_name")}/>
                 <input className="regA" type="text" placeholder="Last Name:" onChange={this.onChange.bind(this,"last_name")}/>
                 <input className="regA" type="text" placeholder="Email:" onChange={this.onChange.bind(this, "email")}/>
-                <input className="regA" type="text" placeholder="Password:" onChange={this.onChange.bind(this, "password")}/>
+                <input className="regA" type="password" placeholder="Password:" onChange={this.onChange.bind(this, "password")}/>
                 <input className="regA" type="text" placeholder="Phone Number:"/>
                 <input className="regA" type="text" placeholder="Address:" />
                 <input className="regA" type="text" placeholder="City:" />
